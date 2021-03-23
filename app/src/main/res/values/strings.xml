@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">个验</string>
+    <string name="fill_bub">我们已经发送了验证码到你的手机：</string>
+    <string name="fill_verify_code">验证码</string>
+    <string name="sms_timer">重新发送(%1$ds)</string>
+    <string name="not_receiver_vercode">重新发送</string>
+
+    <string name="cta_login">一键登录</string>
+    <string name="cta_loginmini">一键登录mini</string>
+    <string name="nonsense_login">智能无感</string>
+    <string name="pic_verify_login">动画验证码</string>
+    <string name="login_login">个验登录</string>
+    <string name="login_cheat_check">反欺诈</string>
+    <string name="desp_logout">注 销</string>
+
+    <string name="desp_geyan">个验是个推旗下基于大数据的移动互联网身份验证产品，为APP开发者提供认证服务。现支持一键登录、云验证以及设备反欺诈三项功能。</string>
+    <string name="cloud_verify_introduction">云验证帮助APP实现本机号码校验，减少用户操作，提升用户体验</string>
+    <string name="pic_verify_introduction">动画验证码可用于防范短信轰炸，有效区分人类与恶意程序，保障业务安全。</string>
+    <string name="nosense_verify_introduction">安全用户无感通过，怀疑用户弹出动画验证码，兼顾用户体验与安全性。</string>
+
+    <string name="type_bi">智能云验证</string>
+    <string name="type_sms">短信验证</string>
+
+    <string name="load_wait">请稍候...</string>
+
+    <string name="tv_send">发送验证码</string>
+
+    <string name="errno_10001">SDK初始化失败</string>
+    <string name="errno_10002">SDK未初始化</string>
+    <string name="errno_10003">手机号为空</string>
+    <string name="errno_10004">类型为空</string>
+    <string name="errno_10005">验证码为空</string>
+    <string name="errno_10006">网络请求异常</string>
+    <string name="errno_10007">服务器数据返回异常</string>
+    <string name="errno_10008">服务器数据解析异常</string>
+
+    <string name="errno_60000">提取验证码成功</string>
+    <string name="errno_60001">提取验证码失败</string>
+
+    <string name="errno_20005">初始化成功</string>
+    <string name="errno_20001">BI 验证成功</string>
+    <string name="errno_20002">SMS 验证成功</string>
+    <string name="errno_20003">验证码发送成功</string>
+    <string name="errno_20004">注册成功</string>
+    <string name="errno_20006">CLOUD 校验不通过，成功发送短信</string>
+
+    <string name="errno_40001">baseInfo 为空</string>
+    <string name="errno_40002">IMSI 超过15位</string>
+    <string name="errno_40003">IMSI 为空</string>
+    <string name="errno_40004">应用无效</string>
+    <string name="errno_40005">appId 为空</string>
+    <string name="errno_40006">appInfo 为空</string>
+    <string name="errno_40007">包名为空</string>
+    <string name="errno_40008">签名为空</string>
+    <string name="errno_40009">SDK未初始化</string>
+    <string name="errno_40010">天级别请求频率过快</string>
+    <string name="errno_40011">发送频率过快,请稍后再试</string>
+    <string name="errno_40013">超过验证接口允许的最大请求量</string>
+    <string name="errno_40012">没有指定校验类型或者有效的校验类型</string>
+    <string name="errno_40014">phoneNumber为空</string>
+    <string name="errno_40015">device信息为空</string>
+
+    <string name="errno_50000">系统服务启动中</string>
+    <string name="errno_50001">其他错误</string>
+    <string name="errno_50002">应用信息加载中</string>
+
+    <string name="errno_90001">验证失败</string>
+    <string name="errno_90002">验证码校验失败，请重试</string>
+    <string name="errno_90003">短信验证码发送失败，请重新点击</string>
+    <string name="errno_90004">设备验证失败</string>
+    <string name="errno_90005">设备ID验证失败</string>
+    <string name="errno_90006">BI校验不通过，发送短信失败</string>
+
+    <string name="ct_account_auth_privacy_text"><u>服务与隐私协议</u></string>
+    <string name="sim_dialog_title">温馨提醒</string>
+    <string name="sim_dialog_content">检测到当前是双卡设备，以下将使用默认上网卡进行登录，如需更换账号，请前往设置切换上网卡。当前可登录账号为%s</string>
+    <string name="sim_dialog_entry_btn">直接登录</string>
+    <string name="sim_dialog_setting_btn">更换账号</string>
+
+</resources>

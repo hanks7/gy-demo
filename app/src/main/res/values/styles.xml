@@ -1,0 +1,89 @@
+<resources>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+        <item name="android:listDivider">@drawable/divider_item_space</item>
+    </style>
+
+    <style name="ButtonTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorButtonNormal">@color/color_default</item><!--正常状态下的颜色  -->
+        <item name="colorControlHighlight">#22000000</item><!--覆盖色，按下的颜色  -->
+    </style>
+
+    <style name="DialogTheme" parent="@style/Theme.AppCompat.Dialog">
+        <item name="color">#393939</item><!--正常状态下的颜色  -->
+        <item name="colorControlHighlight">#22000000</item><!--覆盖色，按下的颜色  -->
+    </style>
+
+    <style name="loadingDialogStyle" parent="Base.Animation.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item><!--设置dialog的背景-->
+        <item name="android:windowFrame">@null</item><!--Dialog的windowFrame框为无-->
+        <item name="android:windowNoTitle">true</item><!--是否显示title-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--是否半透明-->
+        <item name="android:windowContentOverlay">@null</item><!--是否半透明-->
+        <item name="android:color">@color/dialog_grey</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item><!-- 对话框是否有遮盖 -->
+        <item name="android:backgroundDimEnabled">false</item><!--背景是否模糊显示-->
+        <item name="android:backgroundDimAmount">0.6</item><!--背景的灰度-->
+    </style>
+
+    <style name="errorDialogStyle" parent="Base.Animation.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item><!--设置dialog的背景-->
+        <item name="android:windowFrame">@null</item><!--Dialog的windowFrame框为无-->
+        <item name="android:windowNoTitle">true</item><!--是否显示title-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--是否半透明-->
+        <item name="android:color">@color/dialog_grey</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item><!-- 对话框是否有遮盖 -->
+        <item name="android:backgroundDimEnabled">true</item><!--背景是否模糊显示-->
+        <item name="android:backgroundDimAmount">0.6</item><!--背景的灰度-->
+    </style>
+
+    <style name="btnSubmit" parent="Widget.AppCompat.Button">
+        <item name="colorControlHighlight">#2889ce</item>
+        <item name="colorButtonNormal">#01acf3</item>
+    </style>
+
+    <style name="btnSend" parent="Widget.AppCompat.Button.Borderless">
+        <item name="colorControlHighlight">#2889ce</item>
+
+        <item name="android:textColor">#01acf3</item>
+    </style>
+
+    <style name="btnConfirm" parent="Widget.AppCompat.Button.Borderless">
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:textColor">#01acf3</item>
+    </style>
+
+    <style name="CTASDKWhiteWebview" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">@color/CTASDKBackgroundColor</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="mini_activity" >
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置dialog的背景 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 设置Dialog的windowFrame框为无 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 设置无标题 -->
+        <item name="windowNoTitle">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--设置窗口内容不覆盖-->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+
+</resources>

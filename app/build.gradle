@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion project.compileSdk.toInteger()
+    buildToolsVersion project.buildTools
+    defaultConfig {
+        applicationId "com.gysdk.demo"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.openRoutePlanning.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders = [
+
+                GETUI_APPID         : "FzXMk6LUZD6wqRjnOREsWA",//注意：这里的GETUI_APPID开发者应该换成自己申请的GETUI_APPID
+                GT_INSTALL_CHANNEL: "getui",
+        ]
+    }
+
+    signingConfigs {
+        myConfig {
+            storeFile file("yg_test.jks")
+            storePassword "gy123456"
+            keyAlias "getui.com"
+            keyPassword "gy123456"
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.myConfig
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            zipAlignEnabled true     //Zipalign优化
+            shrinkResources true    // 移除无用的resource文件
+            minifyEnabled true
+            signingConfig signingConfigs.myConfig
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+
+dependencies {
+    implementation 'com.getui:elogin:1.2.1.0'
+    implementation 'com.getui:gtc:3.0.4.0'
+    implementation 'com.getui:gysdk:2.0.2.0'
+    // implementation(name: 'elogin-1.2.1.0', ext: 'aar')
+    // implementation(name: 'gysdk-2.0.2.1', ext: 'aar')
+    // implementation(name: 'gtc-3.0.4.0', ext: 'aar') 
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation('com.jakewharton:butterknife:8.5.1') {
+        exclude group: 'com.android.support'
+    }
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    implementation 'com.github.ForgetAll:LoadingDialog:v1.0.4'
+}
+
+
+
+
+
